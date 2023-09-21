@@ -1,0 +1,47 @@
+.nav-section{
+    background-color: #11101d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-section div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 400;
+    column-gap: 15px;
+    cursor: pointer;
+}
+ 
+.nav-section div div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section div div img{
+    background-color: #E4E9F7;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-section div h1{
+    font-weight: 400;
+    font-size: 1rem;
+}

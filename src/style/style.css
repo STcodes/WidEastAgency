@@ -1,0 +1,26 @@
+:root {
+  --back: #20232a;
+  --text_color: #61dafb;
+}
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+  
+body {
+  overflow: hidden;
+  padding: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.home-section{
+  position: relative;
+  background: #E4E9F7;
+  height: 100vh;
+  left: 250px;
+  width: calc(100% - 250px);
+}

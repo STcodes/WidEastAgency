@@ -1,0 +1,136 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: #11101d;
+    z-index: 100;
+    transition: all 0.5s ease;
+    padding: 20px 0 10px 0;
+    overflow: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+  
+.sidebar .logo-details{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .logo-details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .logo-details .logo{
+    width: 140px;
+    height: auto;
+    padding-bottom: 10px;
+}
+  
+.sidebar .nav-links{
+    height: fit-content;
+    padding: 10px 0 0px 0;
+    overflow: hidden;
+}
+  
+.sidebar .nav-links::-webkit-scrollbar{
+    display: none;
+}
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+    color: red;
+}
+.sidebar .nav-links li .iocn-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .nav-links li i{
+    height: 40px;
+    min-width: 60px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu .arrow{
+    transform: rotate(90deg);
+}
+  
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;   
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li a .link_name:hover{
+    color: red;
+}
+ 
+.sidebar .nav-links li .sub-menu{
+    padding: 15px 6px 6px 80px;
+    margin-top: -20px;
+    background: none;
+    display: none;
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+    display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.1s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+    opacity: 1 !important;
+    color: red !important;
+}
+
+.sidebar .copyright-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: none;
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    row-gap: 10px;
+}
+
+.sidebar .copyright-container p a{
+    text-decoration: none;
+    color: rgb(0, 200, 255);
+}
+
+a.navLinkActive span.link_name{
+    color: red !important;
+}
+  
+ 
